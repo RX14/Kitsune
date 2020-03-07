@@ -1,0 +1,13 @@
+name: kitsune
+version: 0.1.0
+
+authors:
+  - RX14 <steph@rx14.co.uk>
+
+dependencies:
+  radix:
+    github: luislavena/radix
+
+crystal: 0.33.0
+
+license: MIT
