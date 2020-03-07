@@ -19,8 +19,21 @@ TODO: Write a description here
 ```crystal
 require "kitsune"
 
-get "/" do |req|
+class App
+  include Kitsune::App(Kitsune::Context)
+  
+  def routes
+    get "/" do |ctx|
+      ctx.response << "KYAAAA~"
+    end
+  end
 end
+
+App.new.listen
+```
+
+```
+Kitsune listening on http://localhost:8088
 ```
 
 TODO: Write usage instructions here
